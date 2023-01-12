@@ -34,7 +34,7 @@ if __name__ == '__main__':
     while (action != 'q'):
         if (action == 'd'):
             b1.deposit(int(input("Enter amount: ")))
-        else:
+        elif action == 'w':
             b1.withdraw(int(input("Enter amount: ")))
         action = input("Enter action(d: Deposit, w: Withdraw, q: Quit): ")
     print()

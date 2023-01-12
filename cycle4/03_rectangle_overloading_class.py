@@ -1,11 +1,11 @@
 class Rectangle:
     def __init__(self, l, b):
-        self.length = l
-        self.breadth = b
+        self.__length = l
+        self.__breadth = b
     def area(self):
-        return self.length * self.breadth
+        return self.__length * self.__breadth
     def perimeter(self):
-        return 2*(self.length + self.breadth)
+        return 2*(self.__length + self.__breadth)
 
     def __lt__(self, other):
         return self.area() < other.area()

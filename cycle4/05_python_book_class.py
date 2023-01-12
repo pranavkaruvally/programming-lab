@@ -1,13 +1,13 @@
 class Publisher:
-    publisher = ""
-    date = ""
+#    publisher = ""
+#    date = ""
     def __init__(self, publisher, date):
         self.publisher = publisher
         self.date = date
 
 class Book(Publisher):
-    title = ""
-    author = ""
+#    title = ""
+#    author = ""
 
     def __init__(self, title, author, publisher, date):
         super().__init__(publisher, date)
@@ -19,8 +19,8 @@ class Book(Publisher):
 
 
 class Python(Book):
-    price = 0
-    pages = 0
+#    price = 0
+#    pages = 0
 
     def __init__(self, title, author, publisher, date, pages, price):
         super().__init__(title, author, publisher, date)
@@ -32,7 +32,7 @@ class Python(Book):
         print(f"New author set as {self.author}")
 
     def __str__(self):
-        printlines = [f"Book: {self.title}", f"Author: {self.author}", f"Publisher: {self.publisher}"
+        printlines = [f"Book: {self.title}", f"Author: {self.author}", f"Publisher: {self.publisher}",
                       f"Date: {self.date}", f"No. of Pages: {self.pages}", f"Price: {self.price}"]
         return '\n'.join(printlines)
 
